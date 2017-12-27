@@ -1,0 +1,89 @@
+@import 'base.less';
+#header {
+    background-color: @main-color;
+    z-index: 999;
+    text-align: center;
+    top: 0;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    height: 45px;
+    .fa-chevron-left {
+        display: block;
+        position: absolute;
+        left: 10px;
+        bottom: 14px;
+        color: #fff;
+    }
+    >form {
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-top: 5px;
+        >input {
+            width: 100%;
+            font-size: 14px;
+            text-align: left;
+            background-color: #fff;
+            color: #000;
+        }
+    }
+    .fa-search {
+        position: absolute;
+        display: block;
+        right: 10px;
+        bottom: 14px;
+        color: #fff;
+    }
+}
+
+#main {
+    background-color: #eee;
+    .category-left {
+        float: left;
+        >ul {
+            >li {
+                >a {
+                    display: block;
+                    border-right: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+                    font-size: 14px;
+                    line-height: 40px;
+                    text-align: center;
+                    width: 80px;
+                    height: 40px;
+                }
+                &.active {
+                    background-color: #ccc;
+                    color: @main-color;
+                }
+            }
+        }
+    }
+    .category-right {
+        overflow: hidden;
+        padding: 10px;
+        width: auto;
+        left: 80px;
+        top: 45px;
+        bottom: 50px;
+        .mui-scroll {
+            position: relative;
+            .mui-row {
+                background-color: #fff;
+                >div {
+                    >a {
+                        display: block;
+                        text-align: center;
+                        >img {
+                            width: 100%;
+                        }
+                        >p {
+                            font-size: 12px;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

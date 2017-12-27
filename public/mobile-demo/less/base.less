@@ -1,0 +1,83 @@
+// 定义主题色
+
+@main-color:#006699;
+
+// 头部公共样式
+
+img {
+	vertical-align: middle;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+li{
+	/* 去掉小圆点 */
+	list-style: none;
+}
+a{
+	color:#666;
+}
+
+// 头部公共样式
+#header {
+	background-color: @main-color;
+	z-index: 999;	
+	text-align: center;
+	top: 0;
+	color: #fff;
+	width: 100%;
+	position: fixed;
+	>h4 {
+		line-height: 45px;
+		margin: 0;
+		font-weight: normal;
+	}
+	.fa-search {
+		position: absolute;
+		display: block;
+		right: 20px;
+		bottom: 14px;
+		color: #fff;
+	}
+}
+
+#footer {
+	z-index: 999;
+	background-color: @main-color;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	.mui-row {
+		>div {
+			font-size: 14px;
+			>a {
+				color: #fff;
+				display: block;
+				text-align: center;
+				font-size: 14px;
+				padding: 11px;
+				&::before {
+					display: block;
+				}
+				&.active {
+					color: orange;
+				}
+			}
+
+		}
+	}
+}
+html,body {
+	height: 100%;
+}
+
+#main {
+	padding-top: 45px;
+	padding-bottom: 50px;
+	height: 100%;
+	background-color: #fff;
+}
